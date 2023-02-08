@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(188, 224, 255);
+
+}
+
+.kysely {
+    background-color: rgb(139, 177, 247);
+    width: 40%;
+    border-radius: 15px;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+}

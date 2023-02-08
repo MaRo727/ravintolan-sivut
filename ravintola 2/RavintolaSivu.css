@@ -1,0 +1,104 @@
+header {
+    background-color: cornflowerblue;
+    font: bolder;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+body {
+    background-color: rgb(201, 230, 255);
+}
+footer {
+    background-color: rgb(170, 232, 255);
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+
+.lohikeitto {
+    left: 15px;
+    z-index: 1;
+}
+.lohisämpylä {
+
+left: 15px;
+top: 50%;
+z-index: 1;
+border-radius: 15px;
+}
+
+.kapov {
+   left: 1cm;
+   z-index: 2;
+   animation: vainTeksti 2s;
+   animation-iteration-count: infinite;
+   position: absolute;
+   animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+.tekstipalkki {
+    background-color: rgb(126, 244, 232);
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexwrap {
+
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+
+@media screen and (max-width:769px) {
+    footer {
+       bottom: 0px;
+    }
+    .lohisämpylä {
+      display: none;
+    }
+    .lohikeitto {
+        display: none;
+    }
+    .kapov img {
+        width: 152px;
+        height: 112px;
+        
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .kapov img {
+        margin-left: -1.5cm;
+        margin-top: 1cm;
+    }
+}
+
+@keyframes vainTeksti {
+    0% {top: 10%;}
+    50% {top: 12%;}
+    100% {top: 10%;}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .kapov img {
+        margin-top: 2cm;
+    }
+}
